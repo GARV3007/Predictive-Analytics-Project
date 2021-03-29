@@ -1,9 +1,9 @@
 # Breast Cancer Prediction
 
-#### Gourav Verma & Saurabh Biswas<br />
-#### DSC-630 Predictive Analytics<br />
-#### Bellevue University, NE<br />
-#### Fall-2020<br />
+#### Gourav Verma & Saurabh Biswas
+#### DSC-630 Predictive Analytics
+#### Bellevue University, NE
+#### Fall-2020
 
 ### Abstract
 Breast cancer or breast carcinoma is uncontrolled growth of epithelial cells in the breast. The uncontrollable division of one cell results in visible mass named tumor. Tumor can be benign or malignant. By Johns Hopkins Pathology, benign tumors are non-malignant/non-cancerous tumor and malignant tumors are cancerous growths. A cancer is another word for a malignant tumor. Most benign tumors respond well to treatment. But, malignant tumors are often resistant to treatment, may spread to other parts of the body and they sometimes recur after they were removed. Under a study by University of Wisconsin, 569 patients (212 with cancer and 357 with benign masses) provided the data for diagnostic algorithm. Diagnostic features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image in the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34]. Breast cancer is the most common malignancy in women, with over 200,000 being diagnosed in the US every year. 40,000 women will die from it each year. The objective of this research is to provide a comparative study on the utilized potential classification tools (Linear regression, random forest) on the problem by a benchmark dataset which consist of numeric cellular shape features extracted from preprocessed Fine Needle Aspiration biopsy image of cell slides.
@@ -31,21 +31,20 @@ Logistic regression (LR) is a statistical method similar to linear regression si
 ### Results
 We used sklearn’s GridSearchCV to fine tune the parameters for above model and then compared the results. We have created Pipelines for Random Forest and Logistic Regression model with different parameters. Then we passed different values through these pipeline parameters to GridSearchCV for module tuning. We have used seeding for reproducibility.
 Random Forest classifier are not best suited for skewed class distribution. Our dataset is imbalanced dataset. But it is not heavily imbalanced (cancer: no-cancer as 1:2). So, we decided that we don’t need calibration.<br />
-Based on the accuracy we selected the best parameters for Random Forest and Logistic Regression classifier. Also based on the accuracy, we have selected Random Forest as our best model.<br />
-We have then tested both of these models using our test dataset and calculated accuracy and f1-score. f1-score is a harmonic mean of precision-recall. We have also produced confusion matrix for each test.<br />
+Based on the accuracy we selected the best parameters for Random Forest and Logistic Regression classifier. Also based on the accuracy, we have selected Random Forest as our best model. We have then tested both of these models using our test dataset and calculated accuracy and f1-score. f1-score is a harmonic mean of precision-recall. We have also produced confusion matrix for each test.<br />
 
 ### References
-https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29 
-https://www.kaggle.com/uciml/breast-cancer-wisconsin-data 
-W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computerized breast cancer diagnosis and prognosis from fine needle aspirates. Archives of Surgery 1995;130:511-516.
-You, H., & Rumbe, G. (2010). Comparative study of classification techniques on breast cancer FNA biopsy data.
-W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computer-derived nuclear features distinguish malignant from benign breast cytology. Human Pathology, 26:792--796, 1995.
-Koelliker, S. L., Chung, M. A., Mainiero, M. B., Steinhoff, M. M., & Cady, B. (2008). Axillary lymph nodes: US-guided fine-needle aspiration for initial staging of breast cancer—correlation with primary tumor size. Radiology, 246(1), 81-89.
-Mu, T., & Nandi, A. K. (2007). Breast cancer detection from FNA using SVM with different parameter tuning systems and SOM–RBF classifier. Journal of the Franklin Institute, 344(3-4), 285-311.
-McManus, D. T., & Anderson, N. H. (2001). Fine needle aspiration cytology of the breast. Current Diagnostic Pathology, 7(4), 262-271.
-Mangasarian, O. L., Street, W. N., & Wolberg, W. H. (1995). Breast cancer diagnosis and prognosis via linear programming. Operations Research, 43(4), 570-577.
-Azmi, M. S. B. M., & Cob, Z. C. (2010, December). Breast cancer prediction based on backpropagation algorithm. In 2010 IEEE Student Conference on Research and Development (SCOReD) (pp. 164-168). IEEE.
-Xiong, X., Kim, Y., Baek, Y., Rhee, D. W., & Kim, S. H. (2005, May). Analysis of breast cancer using data mining & statistical techniques. In Sixth International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing and First ACIS International Workshop on Self-Assembling Wireless Network (pp. 82-87). IEEE.
+https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29 <br />
+https://www.kaggle.com/uciml/breast-cancer-wisconsin-data <br />
+W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computerized breast cancer diagnosis and prognosis from fine needle aspirates. Archives of Surgery 1995;130:511-516. <br />
+You, H., & Rumbe, G. (2010). Comparative study of classification techniques on breast cancer FNA biopsy data. <br />
+W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computer-derived nuclear features distinguish malignant from benign breast cytology. Human Pathology, 26:792--796, 1995. <br />
+Koelliker, S. L., Chung, M. A., Mainiero, M. B., Steinhoff, M. M., & Cady, B. (2008). Axillary lymph nodes: US-guided fine-needle aspiration for initial staging of breast cancer—correlation with primary tumor size. Radiology, 246(1), 81-89.<br />
+Mu, T., & Nandi, A. K. (2007). Breast cancer detection from FNA using SVM with different parameter tuning systems and SOM–RBF classifier. Journal of the Franklin Institute, 344(3-4), 285-311.<br />
+McManus, D. T., & Anderson, N. H. (2001). Fine needle aspiration cytology of the breast. Current Diagnostic Pathology, 7(4), 262-271.<br />
+Mangasarian, O. L., Street, W. N., & Wolberg, W. H. (1995). Breast cancer diagnosis and prognosis via linear programming. Operations Research, 43(4), 570-577.<br />
+Azmi, M. S. B. M., & Cob, Z. C. (2010, December). Breast cancer prediction based on backpropagation algorithm. In 2010 IEEE Student Conference on Research and Development (SCOReD) (pp. 164-168). IEEE.<br />
+Xiong, X., Kim, Y., Baek, Y., Rhee, D. W., & Kim, S. H. (2005, May). Analysis of breast cancer using data mining & statistical techniques. In Sixth International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing and First ACIS International Workshop on Self-Assembling Wireless Network (pp. 82-87). IEEE.<br />
 
 
 
